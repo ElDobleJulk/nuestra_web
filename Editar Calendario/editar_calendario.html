@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style_editar_calendario.css">
+    <link rel="stylesheet" href="style_movil.css">
     <link rel="stylesheet" href="/variables.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<title>Inicio</title>
+<title>Editar Calendario</title>
 </head>
 <body>
+    <script src="JavaScript/script_editar_calendario.js"></script>
+    <script src="JavaScript/script_editar_turnos.js"></script>
+    <script src="JavaScript/script_editar_notas.js"></script>
 <nav id="navbar">
     <input id="toggle" type="checkbox">
     <label for="toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
     <ul>
-        <li><a href="/Editar Calendario/editar_calendario.html">Editar Calendario</a></li>
+        <li><a href="/Inicio/index.html">Inicio</a></li>
         <li><a href="#">Notas</a></li>
         <li><a href="#">Turnos</a></li>
         <li><a href="#">Guardias</a></li>
@@ -24,11 +27,7 @@
     </ul>
 </nav>
 
-<h1 id="header">¡Hola mi bby, bienvenida a la primera versión del calendario!</h1>
 
-<div id="quote-container">
-    <p id="quote">¡Te amo bby!</p>
-</div>
 <!-- Botones de arriba y abajo -->
 <div class="botones-up-down">
     <input id="toggle_up" type="checkbox">
@@ -52,7 +51,7 @@
             </div>
             <div class="dias_mes">
                 
-                <div class="dia" data-dia="1">
+                <div class="dia start-wednesday" data-dia="1">
                     <span class="numero-dia">1</span>
                     <span class="turno"></span> <!-- Aquí se agregará M/T -->
                     <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -256,7 +255,7 @@
         </div>
         <div class="dias_mes">
             
-            <div class="dia" data-dia="1">
+            <div class="dia nov" data-dia="1">
                 <span class="numero-dia">1</span>
                 <span class="turno"></span> <!-- Aquí se agregará M/T -->
                 <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -453,7 +452,7 @@
         </div>
         <div class="dias_mes">
             
-            <div class="dia" data-dia="1">
+            <div class="dia dic" data-dia="1">
                 <span class="numero-dia">1</span>
                 <span class="turno"></span> <!-- Aquí se agregará M/T -->
                 <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -656,7 +655,7 @@
         </div>
         <div class="dias_mes">
             
-            <div class="dia" data-dia="1">
+            <div class="dia ene2025" data-dia="1">
                 <span class="numero-dia">1</span>
                 <span class="turno"></span> <!-- Aquí se agregará M/T -->
                 <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -860,7 +859,7 @@
         </div>
         <div class="dias_mes">
             
-            <div class="dia" data-dia="1">
+            <div class="dia feb2025" data-dia="1">
                 <span class="numero-dia">1</span>
                 <span class="turno"></span> <!-- Aquí se agregará M/T -->
                 <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -1045,7 +1044,7 @@
         </div>
         <div class="dias_mes">
             
-            <div class="dia" data-dia="1">
+            <div class="dia mar2025" data-dia="1">
                 <span class="numero-dia">1</span>
                 <span class="turno"></span> <!-- Aquí se agregará M/T -->
                 <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -1248,7 +1247,7 @@
         </div>
         <div class="dias_mes">
             
-            <div class="dia" data-dia="1">
+            <div class="dia abr2025" data-dia="1">
                 <span class="numero-dia">1</span>
                 <span class="turno"></span> <!-- Aquí se agregará M/T -->
                 <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -1445,7 +1444,7 @@
         </div>
         <div class="dias_mes">
             
-            <div class="dia" data-dia="1">
+            <div class="dia may2025" data-dia="1">
                 <span class="numero-dia">1</span>
                 <span class="turno"></span> <!-- Aquí se agregará M/T -->
                 <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -1648,7 +1647,7 @@
         </div>
         <div class="dias_mes">
             
-            <div class="dia" data-dia="1">
+            <div class="dia jun2025" data-dia="1">
                 <span class="numero-dia">1</span>
                 <span class="turno"></span> <!-- Aquí se agregará M/T -->
                 <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -1845,7 +1844,7 @@
         </div>
         <div class="dias_mes">
             
-            <div class="dia" data-dia="1">
+            <div class="dia jul2025" data-dia="1">
                 <span class="numero-dia">1</span>
                 <span class="turno"></span> <!-- Aquí se agregará M/T -->
                 <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -2048,7 +2047,7 @@
         </div>
         <div class="dias_mes">
             
-            <div class="dia" data-dia="1">
+            <div class="dia ago2025" data-dia="1">
                 <span class="numero-dia">1</span>
                 <span class="turno"></span> <!-- Aquí se agregará M/T -->
                 <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -2251,7 +2250,7 @@
         </div>
         <div class="dias_mes">
             
-            <div class="dia" data-dia="1">
+            <div class="dia sep2025" data-dia="1">
                 <span class="numero-dia">1</span>
                 <span class="turno"></span> <!-- Aquí se agregará M/T -->
                 <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -2448,7 +2447,7 @@
         </div>
         <div class="dias_mes">
             
-            <div class="dia" data-dia="1">
+            <div class="dia oct2025" data-dia="1">
                 <span class="numero-dia">1</span>
                 <span class="turno"></span> <!-- Aquí se agregará M/T -->
                 <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -2651,7 +2650,7 @@
         </div>
         <div class="dias_mes">
             
-            <div class="dia" data-dia="1">
+            <div class="dia nov2025" data-dia="1">
                 <span class="numero-dia">1</span>
                 <span class="turno"></span> <!-- Aquí se agregará M/T -->
                 <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -2848,7 +2847,7 @@
         </div>
         <div class="dias_mes">
             
-            <div class="dia" data-dia="1">
+            <div class="dia dic2025" data-dia="1">
                 <span class="numero-dia">1</span>
                 <span class="turno"></span> <!-- Aquí se agregará M/T -->
                 <div class="notas"></div> <!-- Aquí se agregarán las notas -->
@@ -3038,18 +3037,6 @@
 </section>
 </section>
 
-
-<!-- Modal para añadir notas -->
-<div id="modal" class="modal">
-    <div class="modal-content">
-        <span id="close-modal" class="close">&times;</span>
-        <h2 class="addnote">Añadir nota para el día <span id="modal-dia"></span></h2>
-        <textarea id="nota-text" placeholder="Escribe tu nota aquí..."></textarea>
-        <button id="guardar-nota">Guardar nota</button>
-    </div>
-</div>
-
-
     <!-- Menú contextual -->
     <div id="context-menu" class="context-menu">
         <ul>
@@ -3059,11 +3046,51 @@
             <li data-color="nota">Añadir Nota</li>
         </ul>
     </div>
-    <script src="scriptCalendario.js" defer></script>
+
+<!-- Menú para añadir notas -->
+     <!-- Ícono de "más" -->
+     <button id="addNoteButton" class="add-note-btn">+</button>
+
+     <!-- Formulario Modal -->
+     <div id="noteModal" class="menu_modal">
+         <div class="modal-content">
+             <span id="closeModal" class="close">&times;</span>
+             <h2 id="addNote_h2">Añadir Nota</h2>
+             <form id="noteForm">
+                 <label for="noteText">Texto de la Nota:</label>
+                 <textarea id="noteText" required></textarea>
+                 
+                 <label for="noteDate">Seleccionar Fecha:</label>
+                 <input type="date" id="noteDate" required>
+ 
+                 <label for="noteColor">Seleccionar Color:</label>
+                 <input type="color" id="noteColor" value="#ff0000">
+ 
+                 <button type="submit">Añadir Nota</button>
+             </form>
+         </div>
+     </div>
 
 <!-- Sección para recordatorio de notas importantes -->
 <section id="notas-importantes">
     <p>Notas importantes</p>
 </section>
+
+
+
+
+<!-- SERVIDOR -->
+<p>Sheets API Quickstart</p>
+
+<!--Add buttons to initiate auth sequence and sign out-->
+<button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+<button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+
+<script async defer src="https://apis.google.com/js/api.js" id="gapi"></script>
+<script async defer src="https://accounts.google.com/gsi/client" id="gis"></script>
+<script async defer src="/credenciales.js"></script>
+<script async defer src="/sheets.js"></script>
+
+
 </body>
 </html>
